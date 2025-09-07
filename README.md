@@ -20,6 +20,10 @@ apk add --no-cache bash-completion openssl udev udisks2 xfce4 xfce4-screenshoote
 # to setup vnc
 install RVNC from playstore: https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en
 
+## log off alpine
+```
+exit
+```
 ### install apt
 ```
 apt install tigervnc xorg-xhost -y
