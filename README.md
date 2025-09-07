@@ -39,7 +39,10 @@ chmod +x $PREFIX/bin/vnc*
 # add new session (2) and log in alpine
 
 ```
-alpine ; apk add nano
+alpine
+```
+```
+apk add nano
 ```
 ### edit script
 ```
