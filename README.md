@@ -10,10 +10,15 @@ apk update
 ```
 apk add --no-cache bash-completion openssl udev udisks2 xfce4 xfce4-screenshooter xfce4-screensaver xfce4-taskmanager xfce4-notifyd xfce4-terminal adw-gtk3 adwaita-xfce-icon-theme xfburn parole ristretto dbus-x11
 ```
+(log in with 
+```
+alpine
+```
+)
 
 # to setup vnc
 ### install apt
 ```
 apt install tigervnc xorg-xhost -y
 ```
-
+### 
