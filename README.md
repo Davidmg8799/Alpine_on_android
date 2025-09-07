@@ -1,3 +1,6 @@
+# install termux 
+from fdroid: https://f-droid.org/en/packages/com.termux/
+
 # to install alpine
 
 ```
@@ -12,6 +15,8 @@ apk add --no-cache bash-completion openssl udev udisks2 xfce4 xfce4-screenshoote
 ```
 
 # to setup vnc
+install RVNC from playstore: https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en
+
 ### install apt
 ```
 apt install tigervnc xorg-xhost -y
