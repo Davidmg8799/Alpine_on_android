@@ -6,7 +6,10 @@ from fdroid: https://f-droid.org/en/packages/com.termux/
 ```
 apt update ; apt upgrade ; apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Alpine/main/Install/alpine_3.21.sh ; chmod +x alpine_3.21.sh ; ./alpine_3.21.sh
 ```
-
+## login to alpine
+```
+alpine
+```
 # to install xfce
 
 apk update
