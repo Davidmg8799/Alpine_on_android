@@ -10,15 +10,59 @@ apk update
 ```
 apk add --no-cache bash-completion openssl udev udisks2 xfce4 xfce4-screenshooter xfce4-screensaver xfce4-taskmanager xfce4-notifyd xfce4-terminal adw-gtk3 adwaita-xfce-icon-theme xfburn parole ristretto dbus-x11
 ```
-(log in with 
-```
-alpine
-```
-)
 
 # to setup vnc
 ### install apt
 ```
 apt install tigervnc xorg-xhost -y
 ```
-### 
+### add script
+```
+echo "vncserver -geometry 1600x900 -listen tcp :1 && DISPLAY=:1 xhost +" > $PREFIX/bin/vncstart ; echo "vncserver -kill :1" > $PREFIX/bin/vncstop
+```
+### activate script
+```
+chmod +x $PREFIX/bin/vnc*
+```
+# add new session (2) and log in alpine
+
+```
+alpine ; apk add nano
+```
+### edit script
+```
+nano /usr/local/bin/vncstart
+```
+### add to it
+```
+#!/bin/sh
+export DISPLAY=:1
+export PULSE_SERVER=127.0.0.1
+startxfce4
+```
+
+### ctrl + x, click Y enter.
+
+activate it
+```
+chmod +x /usr/local/bin/vncstart
+```
+# run vnc server
+### on session 1 and 2
+type
+```
+vncstart
+```
+### to enter on RVNC
+### click on + and type
+```
+:1
+```
+on address
+# stop vnc server 
+on 2 press [ctrl c , enter] (2x)
+on 1 type
+```
+vncstop
+```
+# ;]
