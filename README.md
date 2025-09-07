@@ -4,7 +4,7 @@ from fdroid: https://f-droid.org/en/packages/com.termux/
 # to install alpine
 
 ```
-apt update ;apt upgrade ; apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Alpine/main/Install/alpine_3.21.sh ; chmod +x alpine_3.21.sh ; ./alpine_3.21.sh
+apt update ; apt upgrade ; apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Alpine/main/Install/alpine_3.21.sh ; chmod +x alpine_3.21.sh ; ./alpine_3.21.sh
 ```
 
 # to install xfce
